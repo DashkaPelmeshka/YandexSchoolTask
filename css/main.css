@@ -36,6 +36,11 @@ h2 {
 	line-height: 36px;
 }
 
+h3 {
+	font-size: 18px;
+	line-height: 24px;
+}
+
 p {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
@@ -75,6 +80,12 @@ header {
 	margin-right: auto;
 	margin-left: auto;
 	max-width: calc(100% - 80px);
+}
+
+.content_wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 700px;
 }
 
 .button {
@@ -191,6 +202,86 @@ input:checked ~ .expectations__tab-content {
     max-height: 1000px;
 }
 
+.works {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	background-color: var(--darkGrey);
+}
+
+.works__title {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.works__title {
+	color: var(--white);
+	margin-bottom: 8px;
+}
+
+.works__description {
+	color: var(--white);
+	margin-bottom: 80px;
+}
+
+.works__item-title {
+	color: var(--white);
+}
+
+.works__item-site {
+	color: var(--blueViolet);
+	margin-bottom: 20px;
+}
+
+.works__item-image {
+	max-width: 700px;
+	width: 100%;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+.works__item-slider {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.works__item-description {
+	order: 2;
+	width: 74%;
+	text-align: left;
+	color: var(--white);
+}
+
+.slider {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	order: 1;
+}
+
+.slider__round {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: var(--blueViolet);
+	margin-right: 8px;
+}
+
+.slider__round_checked {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0);
+	border: solid 1px var(--blueViolet);
+	margin-right: 8px;
+}
+
+.slider__round:nth-child(4) {
+	margin-right: 0;
+}
+
 @media screen and (max-width: 600px) {
 	h1, h2 {
 		font-size: 32px;
@@ -214,6 +305,31 @@ input:checked ~ .expectations__tab-content {
 	.wrapper {
 		padding-top: 52px;
 		padding-bottom: 52px;
+	}
+
+	.works__description {
+		margin-bottom: 60px;
+	}
+
+	.works__item-slider {
+		flex-direction: column;
+	}
+
+	.works__item-description {
+		width: 100%;
+	}
+
+	.works__item-site {
+		margin-bottom: 16px;
+	}
+
+	.works__item-image {
+		margin-bottom: 16px;
+	}
+
+	.slider {
+		margin: 0 auto;
+		margin-bottom: 16px;
 	}
 }
 
