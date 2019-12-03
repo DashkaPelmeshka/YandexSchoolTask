@@ -63,7 +63,35 @@
 		
 	</section>
 	<footer class="footer">
-		
+		<div class="wrapper">
+			<div class="content_wrapper">
+				<h2 class="footer__title">Контактная информация</h2>
+				<div class="buttons_row">
+					<div class="buttons_row__button facebook">
+						<i class="fa fa-facebook centered"></i>
+					</div>
+					<div class="buttons_row__button vk">
+						<i class="fa fa-vk centered"></i>
+					</div>
+					<div class="buttons_row__button_telegram">
+						<i class="fa fa-telegram"></i>
+					</div>
+				</div>
+				<p class="footer__description paragraph_mono">Я открыта для новых проектов. Вы можете прислать мне для оценки примерное техническое задание или описание проекта своими словами.</p>
+				<form action="#" method="post" id="form1">
+					<div class="footer__element_line">
+						<input class="footer__element" type="text" placeholder="Как вас зовут?" name="footer__name">
+						<input class="footer__element" type="email" placeholder="Почтовый ящик" name="footer__email">
+					</div>
+					<textarea class="footer__message" name="footer__message" placeholder="Сообщение"></textarea>
+					
+					<input class="footer__file" type="file" id="footer__file">
+					<label class="footer__file_label" for="footer__file">Прикрепить ТЗ</label>
+				</form>
+
+				<button class="footer__button button" type="submit" form="form1">Отправить</button>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
